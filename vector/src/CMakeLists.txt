@@ -1,0 +1,1 @@
+add_library(vector SHARED vector.cpp)
