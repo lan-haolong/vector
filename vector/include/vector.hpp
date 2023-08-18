@@ -24,12 +24,12 @@ public:
     size_t capacity() const;                    // 获取容器容量声明
     bool empty() const;                         // 判断容器是否为空声明
     void print() const;                         // 打印容器元素声明
+    void clear();                               // 清空容器并释放内存声明
 
 private:
     T* data;
     size_t size_;
     size_t capacity_;
-    void clear();                               // 清空容器并释放内存声明
     void expandCapacity();                      // 扩展容器容量声明
 };
 
